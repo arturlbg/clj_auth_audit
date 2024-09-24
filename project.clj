@@ -12,7 +12,7 @@
                  [cheshire "5.10.0"]
                  [org.clojure/java.jdbc "0.7.12"]
                  [org.postgresql/postgresql "42.2.23"]
-                 [buddy/buddy-auth "2.4.0"]]
+                 [buddy/buddy-auth "3.0.0"]]
 
 
   :repl-options {:init-ns clj-auth-audit.core})
