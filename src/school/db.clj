@@ -18,3 +18,6 @@
 
 (defn create-student [student]
   (jdbc/insert! db-spec :student student))
+
+(defn try-audit [data]
+  (jdbc/insert! db-spec :audit data))

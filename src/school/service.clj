@@ -1,11 +1,15 @@
 (ns school.service
   (:require [io.pedestal.http :as http]
             [io.pedestal.http.route :as route]
-            [escola-backend.handlers :as handlers]))
+            [escola-backend.handlers :as handlers]
+            [school.audit :as audit]
+            [school.auth :as auth]))
 
 (def common-interceptors
-  [(http/json-body)])
-   ;; Outros interceptors comuns
+  [(http/json-body)
+   auth/auth-interceptor
+   audit/audit-interceptor])
+   ;; Outros interceptors
 
 
 (def routes
