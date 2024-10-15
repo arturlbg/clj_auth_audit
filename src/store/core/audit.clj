@@ -1,6 +1,6 @@
-(ns school.audit
+(ns store.audit
   (:require [io.pedestal.interceptor :refer [interceptor]]
-            [school.db :as db]
+            [store.db :as db]
             [cheshire.core :as json]))
 
 (def audit-interceptor

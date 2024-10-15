@@ -1,4 +1,4 @@
-(ns school.auth
+(ns store.auth
   (:require [io.pedestal.interceptor :refer [interceptor]]
             [buddy.auth :refer [authenticated?]]
             [buddy.auth.backends.token :refer [jws-backend]]))
